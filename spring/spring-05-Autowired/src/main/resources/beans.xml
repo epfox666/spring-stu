@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- 手动装配   -->
+<!--    <bean id="cat" class="com.epfox.pojo.Cat"/>-->
+<!--    <bean id="dog" class="com.epfox.pojo.Dog"/>-->
+
+<!--    <bean id="people" class="com.epfox.pojo.People">-->
+<!--        <property name="name" value="epfox"/>-->
+<!--        <property name="dog" ref="dog"/>-->
+<!--        <property name="cat" ref="cat"/>-->
+<!--    </bean>-->
+
+    <!-- 自动装配 byName  id要对应  id写错会报错 -->
+<!--    <bean id="cat" class="com.epfox.pojo.Cat"/>-->
+<!--    <bean id="dog" class="com.epfox.pojo.Dog"/>-->
+<!---->
+<!--    <bean id="people" class="com.epfox.pojo.People" autowire="byName">-->
+<!--        <property name="name" value="epfox"/>-->
+<!--    </bean>-->
+
+    <!-- 自动装配 byType  id要唯一  多个id会报错-->
+    <bean class="com.epfox.pojo.Cat"/>
+    <bean class="com.epfox.pojo.Dog"/>
+
+    <bean id="people" class="com.epfox.pojo.People" autowire="byType">
+        <property name="name" value="epfox"/>
+    </bean>
+</beans>

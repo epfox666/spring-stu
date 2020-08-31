@@ -10,5 +10,5 @@
         <bean id="user" class="com.epfox.pojo.User" p:name="epfox" p:age="18"/>
 
         <!-- c命名空间注入，可以直接注入属性的值：construct-args       -->
-        <bean id="user2" class="com.epfox.pojo.User" c:name="epfox6" c:age="19"/>
+        <bean id="user2" class="com.epfox.pojo.User" c:name="epfox6" c:age="19" scope="prototype"/>
 </beans>
