@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--bean就是java对象 , 由Spring创建和管理-->
+    <bean id="MysqlImpl" class="com.epfox.dao.UserDaoMysqlImpl"/>
+    <bean id="OracleImpl" class="com.epfox.dao.UserDaoOracleImpl"/>
+    <bean id="SqlserverImpl" class="com.epfox.dao.UserDaoSqlserverImpl"/>
+    <bean id="UserServiceImpl" class="com.epfox.service.UserServiceImpl">
+        <property name="userDao" ref="SqlserverImpl" />
+    </bean>
+
+</beans>
