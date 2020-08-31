@@ -4,7 +4,23 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans.xsd">
     <!--bean就是java对象 , 由Spring创建和管理-->
-    <bean id="hello" class="com.epfox.pojo.User">
-        <property name="name" value="epfox"/>
+<!--    <bean id="user" class="com.epfox.pojo.User">-->
+<!--        <property name="name" value="epfox"/>-->
+<!--    </bean>-->
+        <!--    第一种下标赋值-->
+<!--        <bean id="user" class="com.epfox.pojo.User">-->
+<!--            <constructor-arg index="0" value="epfox5" />-->
+<!--        </bean>-->
+    <!--    第二种 不建议 通过类型创建-->
+<!--    <bean id="user" class="com.epfox.pojo.User">-->
+<!--        <constructor-arg type="java.lang.String" value="epfox6" />-->
+<!--    </bean>-->
+    <!--    第三种  通过类型创建-->
+    <bean id="user" class="com.epfox.pojo.User">
+        <constructor-arg name="name" value="epfox7" />
+    </bean>
+
+    <bean id="userT" class="com.epfox.pojo.UserT">
+
     </bean>
 </beans>

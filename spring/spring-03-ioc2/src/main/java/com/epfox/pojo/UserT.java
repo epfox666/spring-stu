@@ -1,13 +1,13 @@
 package com.epfox.pojo;
 
-public class User {
+public class UserT {
     private String name;
 
 //    public User() {
 //        System.out.println("User的无参构造");
 //    }
-    public User(String name) {
-        this.name = name;
+    public UserT() {
+        System.out.println("UserT被创建了");
     }
 
     public String getName() {
