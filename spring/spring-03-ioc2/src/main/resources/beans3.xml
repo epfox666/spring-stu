@@ -29,7 +29,7 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
   class: bean 对象所对应的全限定名 ： 包名+类型
   name: 也是别名，而且name可以多个别名
   -->
-    <bean id="userT" class="com.epfox.pojo.UserT" name="user2 u2,u3;u4">
+    <bean id="userT" class="com.epfox.pojo.UserT" name="user2 u2,u3;u4;u5">
         <property name="name" value="epfox666@github" />
     </bean>
 
