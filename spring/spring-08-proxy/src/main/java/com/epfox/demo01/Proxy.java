@@ -2,7 +2,7 @@ package com.epfox.demo01;
 
 import com.epfox.demo02.UserServiceImpl;
 
-//中介
+//代理角色：中介
 public class Proxy implements Rent{
     private Host host;
 

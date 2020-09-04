@@ -1,5 +1,6 @@
 package com.epfox.demo02;
 
+//代理角色，在这里面增加日志的实现
 public class UserServiceProxy implements UserService{
 
     private UserServiceImpl userService;

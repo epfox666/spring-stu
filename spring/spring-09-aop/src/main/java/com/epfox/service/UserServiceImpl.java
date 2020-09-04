@@ -1,9 +1,7 @@
-package com.epfox.demo02;
+package com.epfox.service;
 
-//真实对象，完成增删改查操作的人
 public class UserServiceImpl implements UserService{
     public void add() {
-//        System.out.println("使用了add方法");
         System.out.println("增加了一个用户");
     }
 
