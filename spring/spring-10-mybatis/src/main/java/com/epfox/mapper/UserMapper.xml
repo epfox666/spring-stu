@@ -8,7 +8,4 @@
         select * from user;
     </select>
 
-
-
-
 </mapper>
